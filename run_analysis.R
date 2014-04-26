@@ -1,3 +1,5 @@
+# By Raymond Tang for Coursera: Getting and Cleaning Data (Assignment) 2014 April
+
 run_analysis <- function(){
   # load test data  
   subject_test = read.table("UCI HAR Dataset/test/subject_test.txt")
@@ -31,6 +33,7 @@ run_analysis <- function(){
   
   # create a dataset grouped by subject and activity after applying standard deviation and average calculations
   library(data.table)
-  calculatedData<- dt[, lapply(.SD, mean), by=c("subjectId", "activity")]
+  dataDT <- data.table(data)
+  calculatedData<- dataDT[, lapply(.SD, mean), by=c("subjectId", "activity")]
   write.table(calculatedData, "calculated_tidy_data.txt")
 }
