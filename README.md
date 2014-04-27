@@ -6,8 +6,7 @@ Coursera Course: Getting and Cleaning Data
 Assignment Submission Files
 - run_analysis.R
 - README.md
-- merged_tidy_data.txt
-- calculated_tidy_data.txt
+- CookBook.md
 
 Instructions
 
