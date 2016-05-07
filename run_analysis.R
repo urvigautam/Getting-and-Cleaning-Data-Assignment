@@ -1,4 +1,4 @@
-# By Raymond Tang for Coursera: Getting and Cleaning Data (Assignment) 2014 April
+# By Urvi Gautam for Coursera: Getting and Cleaning Data (Assignment) May 2016
 
 run_analysis <- function(){
   # load test data  
